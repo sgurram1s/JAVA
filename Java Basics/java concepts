@@ -1,0 +1,246 @@
+What is Java?
+    Java is a popular programming language, created in 1995.
+    It is owned by Oracle, and more than 3 billion devices run Java.
+    It is used for:
+        Mobile applications (specially Android apps)
+        Desktop applications
+        Web applications
+        Web servers and application servers
+        Games
+        Database connection
+        And much, much more!
+
+
+Why Use Java?
+    Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+    It is easy to learn and simple to use
+    It is open-source and free
+    It is secure, fast and powerful
+    It has a huge community support (tens of millions of developers)
+    Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs
+    As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa.
+
+
+The extension for java file is .java
+In java the file name must be same as class name.
+And the java is a case sensitive.
+
+
+Printing Output:
+    The syntax for printing output is
+        System.out.print();
+    and we can also use println() for printing the output and then going to next line.
+    for example,
+        System.out.println("Hello World!");
+        System.out.println(50000);
+        System.out.println(3 + 3);
+
+Comments in Java:
+    for single line commenting we use ( // ).
+    for example,
+        //This is a single line comment in java
+    for multiline commenting we use ( /* ) at the beginning and ( */ ) at the end.
+    for example,
+        /* this is for
+           multi line commenting in java */.
+
+
+Variables in Java:
+    The syntax for declaring the variables are:
+        type variable_name;
+        type variable_name = value;
+        type variable_name_1, variable_name_2, ....;    // for declaring multiple variables.
+    for example,
+        int myNum = 15;
+        String name = "John";
+        float myFloatNum = 5.99f;
+        char myLetter = 'D';
+        boolean myBool = true;
+    Rules for naming variables are:
+        Name can have letters, digits, underscores and also dollar sign($).
+        name can begin with a letter, underscore or dollar($) sign.
+        Name should start with lowercase and should not have white spaces.
+        Can't use java keywords.
+        Names are case sensitive.
+    for example,
+        myvar, myVar, _myVar, $Var etc.
+
+
+Data Types in Java:
+    There are two data types in java:
+        Primitive Data Type
+            A primitive data type specifies the size and type of variable values, and it has no additional methods.
+            There are eight primitive data types in Java:
+                Data Type       Size        Description
+                byte            1 byte      Stores from -128 to 127
+                short           2 bytes     Stores from -32768 to 32767
+                int             4 bytes     Stores whole numbers from -2,147,483,648 to 2,147,483,647
+                long            8 bytes     Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+                float           4 bytes     Stores decimal value upto 6 to 7 decimal digits
+                double          8 bytes     Stores decimal value upto 15 decimal digits.
+                boolean         1 bit       Stores true or false
+                char            2 bytes     Stores single character/letter/ASCII values
+
+        Non-Primitive Data Type
+            Non-primitive data types are called reference types because they refer to objects.
+            Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc.
+
+
+Type Casting in Java:
+    Type casting is when you assign a value of one primitive data type to another type.
+    In Java, there are two types of casting:
+        Widening Casting:
+            Widening casting is done automatically when passing a smaller size type to a larger size type
+            byte -> short -> char -> int -> long -> float -> double
+            for example,
+                int myInt = 9;
+                double myDouble = myInt; // Automatic casting: int to double
+        Narrowing Casting:
+            Narrowing casting must be done manually by placing the type in parentheses in front of the value.
+            double -> float -> long -> int -> char -> short -> byte
+            for example,
+                double myDouble = 9.78d;
+                int myInt = (int) myDouble;
+
+
+Operators in Java:
+    Operators are used to perform operations on variables and values.
+    Java divides the operators into the following groups:
+        Arithmetic operators:
+            Arithmetic operators are used to perform common mathematical operations.
+            Few Operators are:
+                Addition(+):
+                    Adds together two values(x+y)
+                    for example,
+                        int x = 5;
+                        int y = 3;
+                        System.out.println(x + y);  //Output: 8
+                Subtraction(-):
+                    Subtracts one value from another(x-y)
+                    for example,
+                        int x = 5;
+                        int y = 3;
+                        System.out.println(x - y);  //Output: 2
+                Multiplication(*):
+                    for example,
+                        int x = 5;
+                        int y = 3;
+                        System.out.println(x * y);
+                Division(/):
+                    for example,
+                        int x = 5;
+                        int y = 3;
+                        System.out.println(x / y);
+                Modulus(%):
+                    for example,
+                        int x = 5;
+                        int y = 3;
+                        System.out.println(x % y);
+                Increment(++):
+                    for example,
+                        int x = 5;
+                        int y = ++x;
+                        System.out.print(y);    //Output: 6
+                Decrement(--):
+                    for example,
+                        int x = 5;
+                        int y = --x;
+                        System.out.print(y);    //Output: 4
+        Assignment operators:
+            Assignment operators are used to assign values to variables.
+            For assigning we use equal(=).
+            for example,
+                int x = 5;
+                System.out.print(x);
+            We can also use arithmetic operations along with the assignment operator.
+            for example,
+                int x = 5;
+                x += 3;     // Similar to x = x + 3;
+                System.out.print(x);    //Output: 8
+
+                int x = 5;
+                x *= 3;     // Similar to x = x * 3;
+                System.out.print(x);    //Output: 15
+
+        Comparison operators:
+            Comparison operators are used to compare two values or variables.
+            It is used in decisions.
+            It returns the boolean output( true or false).
+            Few comparisons operators are
+                Equal to                      ==
+                Not equal to                  !=
+                Greater than                  >
+                Greater than or equal to      >=
+                Less than                     <
+                Less than or equal to         <=
+
+        Logical operators
+            Logical operators are used to determine the logic between variables or values
+            They are:
+                Logical and     &&      Returns true if both statements are true
+                Logical or      ||      Returns true if one of those statements is true
+                Logical not     !       Reverse the result, returns false if the result is true
+
+        Bitwise operators:
+
+
+Strings in Java:
+    It is a collection of characters placed in between double quotes(").
+    for example,
+        String name = "krishna";
+        System.out.print(name);     //output: krishna
+    There are many methods in strings.
+        length():
+            For finding length of string we use .length() method.
+            for example,
+                String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                System.out.println(txt.length());       //Output: 26
+        toUpperCase():
+            For changing string to upper case.
+            for example,
+                String txt = "krishna";
+                System.out.print(txt.toUpperCase());        //Output: KRISHNA
+        toLowerCase():
+            For changing the complete string to lower case.
+            for example,
+                String txt = "ENTIRE STRING IS LOWER CASE"
+                System.out.print(txt.toLowerCase());        //Output: entire string is lower case
+        indexOf():
+            This method returns the first occurrence of a specified text in a string.
+            for example,
+                String txt = "Please locate where 'locate' occurs!";
+                System.out.println(txt.indexOf("locate"));      // Outputs 7
+        concat():
+            This method is used for combine or adding two strings.
+            for example,
+                String first = "first name";
+                String last = "last name";
+                System.out.print(first.concat(last));       //Output: first namelast name
+            we can also do as,
+                System.out.print(first+" "+last);       //output: first name last name
+
+    There are few special characters in strings.
+        For the special characters we use backslash(\).
+        Single quote(\'):
+            if we won't use backslash it will treat ' as character.
+            for example,
+                String txt = "It\'s alright.";
+                System.out.println(txt);        //output: It's alright.
+        Double quotes(\"):
+            if we won't use backslash it won't give a expected result.
+            for example,
+                String txt = "We are the so-called \"Vikings\" from the north.";
+                System.out.println(txt);        //output: We are the so-called "Vikings" from the north.
+            in the above example if we won't keep backslash it will through an error.
+        For printing a backslash in a paragraph we need do insert(\) infront of a backslash.
+        for example,
+            String txt = "The character \\ is called backslash.";
+            System.out.println(txt);    //Output: The character \ is called backslash.
+        There are few other:
+            \n      for new line
+            \t      for tab space
+            \b      for backspace
+            \r      for carriage return
+            \f      for form feed           // for more detail please refer "https://www.w3schools.com/java/java_strings_specchars.asp"
+
+
